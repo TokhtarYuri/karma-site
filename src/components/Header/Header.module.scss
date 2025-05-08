@@ -1,0 +1,59 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 100px;
+  background-color: var(--header-bg);
+  color: var(--text-color);
+  flex-wrap: wrap; 
+}
+
+.left,
+.menu,
+.controls,
+.phone {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  fill: var(--text-color);
+}
+
+.menu {
+  justify-content: center;
+  text-align: center;
+
+  a {
+    margin: 0 3rem;
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.controls {
+  gap: 1rem;
+  margin: 0 1rem 0 5rem;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 61px;
+  &:hover {
+    text-decoration: none;
+  }
+
+  span {
+    text-decoration: none;
+  }
+}
+
+.phoneIcon {
+  width: 28px;
+  height: 28px;
+  fill: var(--text-color);
+}

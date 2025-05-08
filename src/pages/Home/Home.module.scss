@@ -1,0 +1,145 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.textBlock {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  gap: 2px;
+  text-align: left;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.buttonContent {
+  display: flex;
+  align-items: center;
+}
+
+.buttonTextColumn {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.buttonTextColumn p {
+  margin: 3px 0;
+}
+
+.logo {
+  margin-right: 20px;
+  fill: var(--text-color);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 60px;
+}
+
+.item {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.bullet {
+  font-size: 45px;
+  line-height: 1;
+  color: var(--text-color);
+  padding-top: 25px;
+}
+
+.contentBlockDataTitle {
+  margin: 70px 0;
+}
+
+.contentBlockDataWrapper {
+  height: calc(100vh - 150px);
+}
+
+.contentBlockDataContent {
+  margin-bottom: 70px;
+}
+
+.contentDriverDataTitle {
+  margin: 50px 0 90px 0;
+}
+
+.contentDriverDataWrapper {
+  height: 100vh;
+}
+
+.contentDriverDataContent {
+  margin-bottom: 110px;
+}
+
+.pointContant p:first-child {
+  margin-bottom: 20px;
+}
+
+.whatWeOffer {
+  margin-top: 150px;
+  padding-right: 2rem;
+}
+
+
+.peculiaritiesContainer {
+  margin: 230px 0 120px;
+  display: grid;
+  grid-template-columns: 40% repeat(3, 20%);
+  align-items: stretch;
+  gap: 24px;
+  padding-right: 72px;
+}
+
+.peculiaritiesTitle {
+  display: flex;
+  justify-content: flex-start;
+  padding: 16px;
+  width: 70%;
+}
+
+.peculiarity {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 85%;
+  position: relative;
+  padding-left: 20px;
+}
+
+.peculiarity2,
+.peculiarity3 {
+  flex-direction: row;
+  align-items: center;
+  /* 
+  align-items: center;  */
+}
+
+.peculiarity2,
+.peculiarity3 {
+  .imgArrowRight {
+    display: flex;
+    margin-right: 70px;
+    fill: var(--text-color);
+    color: var(--text-color);
+    width: 20px;
+    height: 12px;
+    justify-content: center;
+  }
+}
+
+.mb {
+  margin-bottom: 20px;
+}
+
+.faqsContainer {
+  margin-top: 150px;
+}

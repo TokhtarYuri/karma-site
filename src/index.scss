@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap');
+
+
+/* Стили для светлой темы */
+.light {
+  --background-color: #ffffff; 
+  --background-color-2: #F9F9F9;
+  --background-color-3: #1C1C1C;
+  --background-button-hover: #f3f3f3;
+  --text-color: #000000;
+}
+
+/* Стили для тёмной темы */
+.dark {
+  --background-color: #121212;
+  --background-color-2: #1C1C1C;
+  --background-color-3: #F9F9F9;
+  --background-button-hover: #4b4b4b;
+  --text-color: #ffffff;
+}
+:root {
+  --padding-horizontal: 100px;
+  --max-width: 1920px;
+  margin: 0;
+  padding: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Основные стили для страницы */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Manrope', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.app-wrapper {
+  width: 100%;
+  background-color: var(--background-color); 
+  display: flex;
+  justify-content: center;
+}
+
+.app-container {
+  max-width: 1920px;
+  width: 100%;
+  padding-left: var(--padding-horizontal);
+  padding-right: var(--padding-horizontal);
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Пример дополнительных стилей */
+.header, .footer {
+  padding: 20px;
+  background-color: var(--background-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background-color: var(--link-color);
+  color: var(--background-color);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* Typography Scale */
+
+h1 {
+  font-size: 100px;
+  font-weight: 800;
+  line-height: 110px;
+}
+
+h2 {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 75px;
+}
+
+h3 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 55px;
+}
+
+/* Title large */
+.title-lg {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 55px;
+}
+
+/* Title medium */
+.title-md {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 45px;
+}
+
+/* Title small bold */
+.title-sm-bold {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 34px;
+}
+
+/* Body text */
+.body-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+/* Body text medium */
+.body-md {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 29px;
+}
+
+/* Subtitle bold */
+.subtitle-bold {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 34px;
+}
+
+/* Headline bold */
+.headline-bold {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+/* Subtitle medium */
+.subtitle-md {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 35px;
+}
+
+.button-text-lg {
+  font-size: 12px;
+  font-weight: 300;/* 
+  line-height: 45px; */
+}
+
+.button-text-bold {
+  font-size: 20px;
+  font-weight: 700;/* 
+  line-height: 45px; */
+}
+
+.button-text-md {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 34px;
+}
+
+
+/* // styles/reset.scss
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p
+{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+ */
+

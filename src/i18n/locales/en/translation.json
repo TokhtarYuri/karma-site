@@ -1,5 +1,49 @@
 {
-    "greeting": "Hello",
-    "description": "This is a test in English."
+  "menu": {
+    "passengers": "Passengers",
+    "drivers": "Drivers",
+    "about": "About Company"
+  },
+    "home": {
+      "slogan": "Always where you need us",
+      "install_app": "Install the app in two clicks",
+      "download_from": "Download from",
+      "app_store": "App Store",
+      "google_play": "Google Play",
+      "what_we_offer": "What do we offer?",
+      "car_class": "We’ll provide a car of the required class",
+      "pet_transport": "We’ll transport your pet",
+      "item_delivery": "We’ll deliver valuable items",
+      "safety_trip": "We’ll make your trip as safe as possible",
+      "why_karma": "Why choose Karma rides?",
+      "comfort": "Comfort",
+      "speed": "Speed",
+      "economy": "Savings",
+      "car_choice": "We offer cars of various classes",
+      "fast_search": "Minimum time to find a car",
+      "price_control": "You control the trip cost",
+      "driver_income": "A reliable extra income for drivers",
+      "own_schedule": "Flexible schedule",
+      "weekly_income": "Weekly income",
+      "convenient_app": "User-friendly app",
+      "use_our_car": "Drive with our car",
+      "driver_chooses_time": "Driver decides when to work",
+      "weekly_payouts": "Payouts are made at the end of each week",
+      "app_info": "It contains all the necessary information.",
+      "local_cars": "For such workers, we offer cars from local fleets.",
+      "become_partner": "Become a partner",
+      "faq": "Frequently asked questions",
+      "how_to_register": "How to register in the app?"
+    },
+  
+    "footer": {
+      "passengers": "Passengers",
+      "drivers": "Drivers",
+      "socials": "Karma on social media:",
+      "about": "About us",
+      "privacy": "Privacy policy",
+      "copyright": "© 2024 Copyright",
+      "download_app": "Download the app"
+    }
   }
   

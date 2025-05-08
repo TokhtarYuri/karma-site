@@ -1,0 +1,97 @@
+.card {
+  position: relative;
+  overflow: hidden;
+  min-height: 366px;
+  background-color: var(--background-color-2);
+}
+
+.text {
+  position: absolute;
+  z-index: 2;
+  max-width: 40%;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 41px;
+}
+
+.image {
+  position: absolute;
+  bottom: 0;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.wrapper h2 {
+  margin-bottom: 120px;
+}
+
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  .row1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 2rem;
+  }
+
+  .row2 {
+    display: grid;
+    grid-template-columns: 33% 67%;
+    gap: 2rem;
+  }
+}
+
+.card1,
+.card2,
+.card4,
+{
+.text {
+
+  left: 85px;
+  bottom: 70px;
+}
+}
+
+.card1,
+{
+.image {
+  right: 4%;
+}
+}
+
+.card2,
+{
+.image {
+  right: 10%;
+}
+}
+
+.card4,
+{
+.image {
+  right: 14%;
+}
+}
+
+
+
+
+
+.card3 {
+  background-color: #1C1C1C;
+  color: #ffffff;
+
+  .text {
+
+    left: 85px;
+    top: 70px;
+  }
+
+  .image {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

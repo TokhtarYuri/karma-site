@@ -381,13 +381,17 @@ module.exports = function (webpackEnv) {
                 {
                   loader: require.resolve('@svgr/webpack'),
                   options: {
-                    prettier: false,
-                    svgo: false,
+                    svgo: true,
                     svgoConfig: {
-                      plugins: [{ removeViewBox: false }],
+                      plugins: [
+                        {
+                          name: 'removeViewBox',
+                          active: false,
+                        },
+                      ],
                     },
                     titleProp: true,
-                    ref: true,
+                    prettier: false,
                   },
                 },
                 {
@@ -397,10 +401,8 @@ module.exports = function (webpackEnv) {
                   },
                 },
               ],
-              issuer: {
-                and: [/\.(ts|tsx|js|jsx|md|mdx)$/],
-              },
-            },
+            }
+            ,
             // Process application JS with Babel.
             // The preset includes JSX, Flow, TypeScript, and some ESnext features.
             {

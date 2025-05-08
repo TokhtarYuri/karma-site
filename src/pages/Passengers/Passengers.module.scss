@@ -1,0 +1,45 @@
+.passengers
+{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.passengersMainImg
+{
+    width: 100%;
+}
+
+.featureIconsBlock{
+  margin-top: 150px;
+}
+
+.contentAppBlockData{
+  margin-top: 150px;
+  padding: 0 40px;
+}
+
+.intercityBlockData{
+  margin-top: 150px;
+}
+.deliveryBlockData{
+  margin-top: 150px;
+  padding: 0 0 0 150px;
+}
+
+.contentApp{
+  margin: 100px 0;
+  max-width: 500px;
+}
+
+.bonusContainer{
+  display: flex;
+  margin-top: 100px;
+  background-color: var(--background-color-2);
+  padding: 50px 150px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faqsContainer {
+  margin-top: 150px;
+}

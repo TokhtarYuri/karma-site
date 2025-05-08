@@ -19,10 +19,10 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    fallbackLng: 'ua', // если язык не найден
+    fallbackLng: 'ua', 
     debug: true,
     interpolation: {
-      escapeValue: false, // React уже экранирует
+      escapeValue: false,
     }
   });
 

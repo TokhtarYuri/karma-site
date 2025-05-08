@@ -1,43 +1,45 @@
-// src/components/Header.tsx
+// src/components/Header/Header.tsx
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTheme } from '../../context/ThemeContext';
 import ThemeSwitch from '../ui/ThemeSwitch';
-import './Header.module.css'; 
-import { ReactComponent as PhoneIcon } from 'src/images/phone.svg';
+import styles from './Header.module.scss';
+import { useTranslation } from 'react-i18next';
+import { ReactComponent as PhoneIcon } from '../../assets/phone.svg';
+import { ReactComponent as Logo } from '../../assets/logo.svg';
+import LanguageSwitcher from 'components/ui/LanguageSwitcher';
 
 const Header: React.FC = () => {
   const { theme, toggleTheme } = useTheme();
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    i18n.changeLanguage(e.target.value);
+  };
 
   return (
-    <header className="header">
-      <div className="header__left">
-        <Link to="/" className="header__logo">LOGO</Link>
+    <header className={styles.header}>
+      <div className={styles.left}>
+        <Link to="/">
+          <Logo className={styles.logo} />
+        </Link>
       </div>
 
-      <nav className="header__menu">
-        <Link to="/passengers">Пассажирам</Link>
-        <Link to="/drivers">Водителям</Link>
-        <Link to="/about">Про компанию</Link>
+      <nav className={styles.menu}>
+        <Link to="/passengers" className="body-text">{t('menu.passengers')}</Link>
+        <Link to="/drivers" className="body-text">{t('menu.drivers')}</Link>
+        <Link to="/about" className="body-text">{t('menu.about')}</Link>
       </nav>
 
-      <div className="header__right">
-        {/* Мовний селектор (тимчасово статичний) */}
-        <select className="header__lang">
-          <option value="ru">RU</option>
-          <option value="uk">UK</option>
-          <option value="en">EN</option>
-        </select>
-
-        {/* Світчер теми */}
+      <div className={styles.controls}>
+        <LanguageSwitcher />
         <ThemeSwitch />
-
-        {/* Телефон */}
-        <div className="header__phone">
-          <PhoneIcon className="phone-icon" />
-          <span>699</span>
-        </div>
       </div>
+
+      <a className={styles.phone} href="tel:699">
+        <PhoneIcon className={styles.phoneIcon} />
+        <span>699</span>
+      </a>
     </header>
   );
 };
