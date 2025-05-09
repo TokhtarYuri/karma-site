@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/karma-site/static/css/main.7a8459fd.css",
-    "main.js": "/karma-site/static/js/main.6d7dff5a.js",
+    "main.css": "/karma-site/static/css/main.0c42722f.css",
+    "main.js": "/karma-site/static/js/main.cd9b3555.js",
     "static/media/drivers.png": "/karma-site/static/media/drivers.946abf2c6f3e64f3a5ec.png",
     "static/media/passengers-main.png": "/karma-site/static/media/passengers-main.708367bf60d787b2451b.png",
     "static/media/about.png": "/karma-site/static/media/about.e7c93af466257f834a85.png",
@@ -28,6 +28,7 @@
     "static/media/logo.svg": "/karma-site/static/media/logo.b2df0850ba20014ffb1fdd149e9c406f.svg",
     "static/media/youtube.svg": "/karma-site/static/media/youtube.da35f76d34ea92348cced02492781366.svg",
     "static/media/instagram.svg": "/karma-site/static/media/instagram.edfd7fed272883ca5b0474fdad5f8222.svg",
+    "static/media/burger.svg": "/karma-site/static/media/burger.421bfa35793a24ded32657d42d99c092.svg",
     "static/media/logo-google-play.svg": "/karma-site/static/media/logo-google-play.b9fe709d9d43f40dc5c4471ce7a33bfb.svg",
     "static/media/logo-apple.svg": "/karma-site/static/media/logo-apple.84e9c653d79bb427cdc77bf744a21e3b.svg",
     "static/media/facebook.svg": "/karma-site/static/media/facebook.6ab17260bc148ca85b73d34177b1d929.svg",
@@ -36,11 +37,11 @@
     "static/media/phone.svg": "/karma-site/static/media/phone.34dff2244eceacc975b18a9c5a37a7eb.svg",
     "static/media/tiktok.svg": "/karma-site/static/media/tiktok.0690e5bb59600b2a7c63dfc112beb57a.svg",
     "static/media/arrow.svg": "/karma-site/static/media/arrow.1f2c16c54a9901bda07bbb08f9a7ac9b.svg",
-    "main.7a8459fd.css.map": "/karma-site/static/css/main.7a8459fd.css.map",
-    "main.6d7dff5a.js.map": "/karma-site/static/js/main.6d7dff5a.js.map"
+    "main.0c42722f.css.map": "/karma-site/static/css/main.0c42722f.css.map",
+    "main.cd9b3555.js.map": "/karma-site/static/js/main.cd9b3555.js.map"
   },
   "entrypoints": [
-    "static/css/main.7a8459fd.css",
-    "static/js/main.6d7dff5a.js"
+    "static/css/main.0c42722f.css",
+    "static/js/main.cd9b3555.js"
   ]
 }
