@@ -35,7 +35,7 @@ const Home: React.FC = () => {
     content: <p className="title-md">{t("home.install_app")}</p>,
     buttons: (
       <div className={styles.buttonGroup}>
-        <Button onClick={() => console.log('Clicked!')}>
+        <Button className={styles.btn} onClick={() => console.log('Clicked!')}>
           <div className={styles.buttonContent}>
             <AppleLogo className={styles.logo} />
             <div className={styles.buttonTextColumn}>
@@ -49,7 +49,7 @@ const Home: React.FC = () => {
           </div>
         </Button>
 
-        <Button onClick={() => console.log('Clicked!')}>
+        <Button className={styles.btn} onClick={() => console.log('Clicked!')}>
           <div className={styles.buttonContent}>
             <GooglePlayLogo className={styles.logo} />
             <div className={styles.buttonTextColumn}>

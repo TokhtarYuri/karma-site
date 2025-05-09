@@ -4,7 +4,7 @@
 
 /* Стили для светлой темы */
 .light {
-  --background-color: #ffffff; 
+  --background-color: #ffffff;
   --background-color-2: #F9F9F9;
   --background-color-3: #1C1C1C;
   --background-button-hover: #f3f3f3;
@@ -19,12 +19,25 @@
   --background-button-hover: #4b4b4b;
   --text-color: #ffffff;
 }
+
 :root {
   --padding-horizontal: 100px;
   --max-width: 1920px;
   margin: 0;
   padding: 0;
+
+    @media (max-width: 1440px) and (min-width: 1281px) {
+    --padding-horizontal: 70px;
+  }
+  @media (max-width: 1280px) and (min-width: 1024px) {
+    --padding-horizontal: 50px;
+  }
+
+  @media (max-width: 1023px) {
+    --padding-horizontal: 40px;
+  }
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -41,7 +54,7 @@ body {
 
 .app-wrapper {
   width: 100%;
-  background-color: var(--background-color); 
+  background-color: var(--background-color);
   display: flex;
   justify-content: center;
 }
@@ -65,31 +78,60 @@ a:hover {
 
 
 button {
-  background-color: var(--link-color);
+  background-color: var(--background-color);
   color: var(--background-color);
   border: none;
-  padding: 10px 20px;
   cursor: pointer;
 }
-
 
 h1 {
   font-size: 100px;
   font-weight: 800;
   line-height: 110px;
+
+  @media (max-width: 1024px) {
+    font-size: 70px;
+    line-height: 80px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 50px;
+    line-height: 60px;
+  }
 }
 
 h2 {
   font-size: 70px;
   font-weight: 700;
   line-height: 75px;
+
+  @media (max-width: 1024px) {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 36px;
+    line-height: 44px;
+  }
 }
 
 h3 {
   font-size: 50px;
   font-weight: 700;
   line-height: 55px;
+
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 28px;
+    line-height: 36px;
+  }
 }
+
 
 /* Title large */
 .title-lg {
@@ -112,7 +154,6 @@ h3 {
   line-height: 34px;
 }
 
-/* Body text */
 .body-text {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
@@ -120,7 +161,6 @@ h3 {
   line-height: 25px;
 }
 
-/* Body text medium */
 .body-md {
   font-family: 'Open Sans', sans-serif;
   font-size: 21px;
@@ -128,21 +168,18 @@ h3 {
   line-height: 29px;
 }
 
-/* Subtitle bold */
 .subtitle-bold {
   font-size: 25px;
   font-weight: 600;
   line-height: 34px;
 }
 
-/* Headline bold */
 .headline-bold {
   font-size: 40px;
   font-weight: 700;
   line-height: 48px;
 }
 
-/* Subtitle medium */
 .subtitle-md {
   font-size: 30px;
   font-weight: 600;
@@ -151,14 +188,14 @@ h3 {
 
 .button-text-lg {
   font-size: 12px;
-  font-weight: 300;/* 
+  font-weight: 300;
+  /* 
   line-height: 45px; */
 }
 
 .button-text-bold {
   font-size: 20px;
-  font-weight: 700;/* 
-  line-height: 45px; */
+  font-weight: 700;
 }
 
 .button-text-md {
@@ -167,14 +204,11 @@ h3 {
   line-height: 34px;
 }
 
-
-/* ==== Кастомный скроллбар ==== */
 html {
   scrollbar-width: thin;
   scrollbar-color: var(--background-color-3) var(--background-color);
 }
 
-/* Chrome, Edge, Safari */
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -188,7 +222,6 @@ html {
   border-radius: 4px;
 }
 
-/* Мобильный и планшет — уже скролл */
 @media (max-width: 1024px) {
   ::-webkit-scrollbar {
     width: 2px;

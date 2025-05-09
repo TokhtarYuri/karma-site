@@ -16,7 +16,7 @@
   }
 
   @media (max-width: 1023px) {
-    padding: 20px 30px;
+    padding: 30px 40px;
     flex-wrap: wrap;
   }
 }
@@ -48,6 +48,9 @@
   display: flex;
   align-items: center;
   gap: 5rem;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
 
   @media (max-width: 1440px) and (min-width: 1281px) {
     gap: 3rem;
@@ -67,7 +70,8 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-    span {
+
+  span {
     text-decoration: none;
     font-weight: 700;
     font-size: 45px;
@@ -101,12 +105,12 @@
   left: 0;
   right: 0;
   width: 100%;
-  height: calc(100vh - 100px);
+  height: calc(100vh);
   padding: 20px 30px 40px;
   background-color: var(--background-color);
   display: flex;
   flex-direction: column;
-   gap: 5rem; 
+  gap: 5rem;
   z-index: 1000;
 
   @media (min-width: 1024px) {
@@ -115,14 +119,16 @@
 }
 
 .closeButton {
-  margin-top: auto;
+
   align-self: center;
   width: 90%;
   background-color: var(--button-bg, #ddd);
   color: var(--text-color);
   border: none;
   border-radius: 8px;
-  font-size: 1rem;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 34px;
   cursor: pointer;
   transition: background-color 0.2s ease;
 
@@ -139,7 +145,7 @@
 
 .controls {
   display: flex;
-    align-items: center;
+  align-items: center;
   gap: 1rem;
 
 }
@@ -148,7 +154,7 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-    font-size: 25px;
+  font-size: 25px;
   font-weight: 700;
   line-height: 34px;
 
@@ -161,7 +167,8 @@
 
 .logo {
   fill: var(--text-color);
-    @media (max-width: 1023px) {
+
+  @media (max-width: 1023px) {
     width: 150px;
   }
 }

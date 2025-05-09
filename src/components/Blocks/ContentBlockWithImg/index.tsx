@@ -39,6 +39,18 @@ export const ContentBlock: React.FC<ContentBlockProps> = ({ data }) => {
 
   const [leftRatio, rightRatio] = columnRatio.split('-');
   const isImageLeft = imagePosition === 'left';
+  const [isMobile, setIsMobile] = React.useState(false);
+
+  React.useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1024);
+    };
+
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   return (
     <div
@@ -49,21 +61,38 @@ export const ContentBlock: React.FC<ContentBlockProps> = ({ data }) => {
         customStyles.wrapper
       )}
     >
-      <div
-        className={clsx(styles.imageColumn, customStyles.imageColumn)}
-        style={{ flex: leftRatio }}
-      >
-        <img src={image} alt="Content Block" className={styles.image} />
-      </div>
+      {/* Desktop layout */}
+      {!isMobile && (
+        <>
+          <div
+            className={clsx(styles.imageColumn, customStyles.imageColumn)}
+            style={{ flex: leftRatio }}
+          >
+            <img src={image} alt="Content Block" className={styles.image} />
+          </div>
 
-      <div
-        className={clsx(styles.contentColumn, customStyles.contentColumn)}
-        style={{ flex: rightRatio }}
-      >
-        {title && <div className={clsx(styles.title, customStyles.title)}>{title}</div>}
-        {content && <div className={clsx(styles.content, customStyles.content)}>{content}</div>}
-        {buttons && <div className={clsx(styles.buttons, customStyles.buttons)}>{buttons}</div>}
-      </div>
+          <div
+            className={clsx(styles.contentColumn, customStyles.contentColumn)}
+            style={{ flex: rightRatio }}
+          >
+            {title && <div className={clsx(styles.title, customStyles.title)}>{title}</div>}
+            {content && <div className={clsx(styles.content, customStyles.content)}>{content}</div>}
+            {buttons && <div className={clsx(styles.buttons, customStyles.buttons)}>{buttons}</div>}
+          </div>
+        </>
+      )}
+
+      {/* Mobile layout */}
+      {isMobile && (
+        <div className={clsx(styles.mobileColumn)}>
+          {title && <div className={clsx(styles.title, customStyles.title)}>{title}</div>}
+          <div className={clsx(styles.imageColumn, customStyles.imageColumn)}>
+            <img src={image} alt="Content Block" className={styles.image} />
+          </div>
+          {content && <div className={clsx(styles.content, customStyles.content)}>{content}</div>}
+          {buttons && <div className={clsx(styles.buttons, customStyles.buttons)}>{buttons}</div>}
+        </div>
+      )}
     </div>
   );
 };
