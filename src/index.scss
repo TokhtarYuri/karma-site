@@ -63,12 +63,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Пример дополнительных стилей */
-.header, .footer {
-  padding: 20px;
-  background-color: var(--background-color);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 
 button {
   background-color: var(--link-color);
@@ -78,13 +72,6 @@ button {
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #0056b3;
-}
-
-
-
-/* Typography Scale */
 
 h1 {
   font-size: 100px;
@@ -181,14 +168,29 @@ h3 {
 }
 
 
-/* // styles/reset.scss
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p
-{
-  margin: 0;
-  padding: 0;
-  border: 0;
-  vertical-align: baseline;
+/* ==== Кастомный скроллбар ==== */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--background-color-3) var(--background-color);
 }
- */
 
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--background-color-3);
+  border-radius: 4px;
+}
+
+/* Мобильный и планшет — уже скролл */
+@media (max-width: 1024px) {
+  ::-webkit-scrollbar {
+    width: 2px;
+  }
+}

@@ -1,6 +1,6 @@
 import { ContentBlock } from 'components/Blocks/ContentBlockWithImg';
 import React from 'react';
-import { useTranslation } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 import imgCarBlack from '../../assets/car-black.png';
 import imgCarWhite from '../../assets/car-white.png';
 import { ReactComponent as ArrowRight } from '../../assets/arrow-right.svg';
@@ -26,7 +26,12 @@ const Home: React.FC = () => {
     image: theme === 'dark' ? imgCarBlack : imgCarWhite,
     imagePosition: 'right',
     columnRatio: '60-40',
-    title: <h1>{t("home.slogan")}</h1>,
+    title: <h1>
+      <Trans
+        i18nKey="home.slogan"
+        components={{ br: <br /> }}
+      />
+    </h1>,
     content: <p className="title-md">{t("home.install_app")}</p>,
     buttons: (
       <div className={styles.buttonGroup}>

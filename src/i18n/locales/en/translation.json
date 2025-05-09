@@ -2,48 +2,131 @@
   "menu": {
     "passengers": "Passengers",
     "drivers": "Drivers",
-    "about": "About Company"
+    "about": "About",
+    "сlose": "Сlose"
   },
-    "home": {
-      "slogan": "Always where you need us",
-      "install_app": "Install the app in two clicks",
-      "download_from": "Download from",
-      "app_store": "App Store",
-      "google_play": "Google Play",
-      "what_we_offer": "What do we offer?",
-      "car_class": "We’ll provide a car of the required class",
-      "pet_transport": "We’ll transport your pet",
-      "item_delivery": "We’ll deliver valuable items",
-      "safety_trip": "We’ll make your trip as safe as possible",
-      "why_karma": "Why choose Karma rides?",
-      "comfort": "Comfort",
-      "speed": "Speed",
-      "economy": "Savings",
-      "car_choice": "We offer cars of various classes",
-      "fast_search": "Minimum time to find a car",
-      "price_control": "You control the trip cost",
-      "driver_income": "A reliable extra income for drivers",
-      "own_schedule": "Flexible schedule",
-      "weekly_income": "Weekly income",
-      "convenient_app": "User-friendly app",
-      "use_our_car": "Drive with our car",
-      "driver_chooses_time": "Driver decides when to work",
-      "weekly_payouts": "Payouts are made at the end of each week",
-      "app_info": "It contains all the necessary information.",
-      "local_cars": "For such workers, we offer cars from local fleets.",
-      "become_partner": "Become a partner",
-      "faq": "Frequently asked questions",
-      "how_to_register": "How to register in the app?"
+  "home": {
+    "slogan": "Always where<br/>you need us",
+    "install_app": "Install the app in two clicks",
+    "download_from": "Download from",
+    "app_store": "App Store",
+    "google_play": "Google Play",
+    "what_we_offer": "What do we offer?",
+    "car_class": "We provide a car of the required class",
+    "pet_transport": "We transport your pet",
+    "item_delivery": "We deliver valuable items",
+    "safety_trip": "We make the trip as safe as possible",
+    "why_karma": "What makes rides with Karma special?",
+    "comfort": "Comfort",
+    "speed": "Speed",
+    "economy": "Savings",
+    "car_choice": "Our fleet includes cars of various classes",
+    "fast_search": "Minimal time to find a car",
+    "price_control": "You control the trip cost yourself",
+    "driver_income": "Reliable extra income for drivers",
+    "point": [
+      {
+        "title": "Flexible schedule",
+        "description": "The driver independently chooses when to work"
+      },
+      {
+        "title": "Weekly income",
+        "description": "Payments are made at the end of each week"
+      },
+      {
+        "title": "Convenient app",
+        "description": "It contains all the necessary information"
+      },
+      {
+        "title": "Drive our car",
+        "description": "For such employees we have cars from local fleets"
+      }
+    ],
+    "become_partner": "Become a partner",
+    "faq": "Frequently asked questions",
+    "faqs": [
+      {
+        "question": "Service standards",
+        "answer": "To register in the app, first download it from the appropriate store for your device. After installation, open the app and select 'Register'. Then enter your personal information, such as name, phone number, and password. After filling in the required fields, you may be asked to verify your account via SMS. After successful registration, you will be able to use all the app’s features."
+      },
+      {
+        "question": "Driver promotions",
+        "answer": "To register in the app, first download it from the appropriate store for your device. After installation, open the app and select 'Register'. Then enter your personal information, such as name, phone number, and password. After filling in the required fields, you may be asked to verify your account via SMS. After successful registration, you will be able to use all the app’s features."
+      },
+      {
+        "question": "How to register in the app?",
+        "answer": "To register in the app, first download it from the appropriate store for your device. After installation, open the app and select 'Register'. Then enter your personal information, such as name, phone number, and password. After filling in the required fields, you may be asked to verify your account via SMS. After successful registration, you will be able to use all the app’s features."
+      },
+      {
+        "question": "How to register in the app?",
+        "answer": "To register in the app, first download it from the appropriate store for your device. After installation, open the app and select 'Register'. Then enter your personal information, such as name, phone number, and password. After filling in the required fields, you may be asked to verify your account via SMS. After successful registration, you will be able to use all the app’s features."
+      }
+    ]
+  },
+  "passenger": {
+    "title": "Travel<br/>in comfort",
+    "app": "Even more convenient<br/>in the app",
+    "download_app": "Download the app",
+    "app_description": "Our goal is to make your life more convenient and enjoyable, and we achieve this by simplifying processes through our app",
+    "bonus": "₴1000 bonus for all trips<br/>via our app",
+    "intercity": "Trips<br/>between cities",
+    "intercity.description": "Use our app to order a car for travel between cities in Ukraine.",
+    "delivery": "Delivery<br/>of your packages",
+    "delivery.description": "Order a car to deliver your important packages, documents, and more within the city.",
+    "fast_pickup": "Fast<br/>car pickup",
+    "cheap_trip": "Trips with Karma<br/>are much cheaper",
+    "safe_trip": "And it's also<br/>your safety",
+    "faq": "Frequently asked questions",
+    "faqs": [
+      {
+        "question": "Our rates",
+        "answer": "To register in the app, first download it from the appropriate store for your device. After installation, open the app and select 'Register'. Then enter your personal information, such as name, phone number, and password. After filling in the required fields, you may be asked to verify your account via SMS. After successful registration, you will be able to use all the app’s features."
+      },
+      {
+        "question": "Promotions",
+        "answer": "To register in the app, first download it from the appropriate store for your device. After installation, open the app and select 'Register'. Then enter your personal information, such as name, phone number, and password. After filling in the required fields, you may be asked to verify your account via SMS. After successful registration, you will be able to use all the app’s features."
+      },
+      {
+        "question": "How to register in the app?",
+        "answer": "To register in the app, first download it from the appropriate store for your device. After installation, open the app and select 'Register'. Then enter your personal information, such as name, phone number, and password. After filling in the required fields, you may be asked to verify your account via SMS. After successful registration, you will be able to use all the app’s features."
+      },
+      {
+        "question": "How to register in the app?",
+        "answer": "To register in the app, first download it from the appropriate store for your device. After installation, open the app and select 'Register'. Then enter your personal information, such as name, phone number, and password. After filling in the required fields, you may be asked to verify your account via SMS. After successful registration, you will be able to use all the app’s features."
+      }
+    ]
+  },
+  "drivers": {
+    "title": "Work with Karma — <br/>get bonuses",
+    "subtitle": "App for drivers",
+    "description": "The Karma app offers new orders in your area, builds a convenient route, and provides a detailed income report.",
+    "advantages_of_the_application": [
+      "Easy start",
+      "Convenient income tracking",
+      "Higher rating — lower commission"
+    ],
+    "cta_button": "Become a partner",
+    "features": {
+      "flexible_schedule": "Flexible<br/>schedule",
+      "regular_orders": "Regular<br/>orders",
+      "stable_income": "Stable<br/>income"
     },
-  
-    "footer": {
-      "passengers": "Passengers",
-      "drivers": "Drivers",
-      "socials": "Karma on social media:",
-      "about": "About us",
-      "privacy": "Privacy policy",
-      "copyright": "© 2024 Copyright",
-      "download_app": "Download the app"
-    }
+    "steps_title": "To get started, just follow 4 steps:",
+    "steps": {
+      "accept_orders": "Go<br/>to orders",
+      "download_app": "Download<br/>the app",
+      "register": "Complete<br/>registration",
+      "add_vehicle": "Add<br/>your car"
+    },
+    "faqs": [
+      {
+        "question": "Service standards",
+        "answer": "To register in the app, first download it from the appropriate store for your device. After installation, open the app and select 'Register'. Then enter your personal information, such as name, phone number, and password. After filling in the required fields, you may be asked to verify your account via SMS. After successful registration, you will be able to use all the app’s features."
+      },
+      {
+        "question": "Driver promotions",
+        "answer": "To register in the app, first download..."
+      }
+    ]
   }
-  
+}

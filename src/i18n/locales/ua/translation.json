@@ -2,10 +2,11 @@
   "menu": {
     "passengers": "Пасажирам",
     "drivers": "Водіям",
-    "about": "Про компанію"
+    "about": "Про компанію",
+    "сlose": "Закрити"
   },
   "home": {
-    "slogan": "Щоразу там де треба",
+    "slogan": "Щоразу там<br/>де треба",
     "install_app": "Встановлюй додаток у два кліки",
     "download_from": "Завантажуйте з",
     "app_store": "App Store",
