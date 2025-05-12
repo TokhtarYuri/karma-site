@@ -87,7 +87,7 @@ const Home: React.FC = () => {
       </div>,
     buttons:
       <div className={styles.buttonGroup}>
-        <Button onClick={() => console.log('Clicked!')}>
+        <Button className={styles.btn} onClick={() => console.log('Clicked!')}>
           <div className={styles.buttonContent}>
             <p className="button-text-bold">
               {t('home.become_partner')}

@@ -1,135 +1,199 @@
-
-.driversContainer{
+.driversContainer {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-.driversMainImg{
-    width: 100%;
+
+.driversMainImg {
+  width: 100%;
 }
 
 .contentAppBlockData {
-    margin-top: 200px;
+  margin-top: 200px;
+
+  @media (max-width: 1024px) {
+    margin-top: 100px;
+
+    h2 {
+      margin-bottom: 50px;
+    }
+  }
+
 }
 
 
 .contentAppBlockDataContent {
-    margin: 60px 0;
-}
-  .contentApp {
-    margin-bottom: 100px; 
-  }
-  
-  .advantagesList {
-    list-style: none; 
-    padding: 0;
-    margin: 0;
-  }
-  
-  .advantageItem {
-    position: relative;
-    padding-left: 55px; 
-    margin-bottom: 40px; 
-  
-    &::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 10px; 
-      width: 12px;
-      height: 12px;
-      background-color: #D9D9D9;
-      border-radius: 50%;
-    }
-  }
-
-.featureIconsBlock{
-    margin-top: 200px;
+  margin: 60px 0;
 }
 
-  .stepsBlock{
-    margin-top: 200px;
-    h2{
-        width: 50%;
-    }
+.contentApp {
+  margin-bottom: 100px;
+}
+
+.advantagesList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.advantageItem {
+  position: relative;
+  padding-left: 55px;
+  margin-bottom: 40px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 12px;
+    height: 12px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+  }
+}
+
+.featureIconsBlock {
+  margin-top: 200px;
+}
+
+.stepsBlock {
+  margin-top: 200px;
+
+  h2 {
+    width: 50%;
   }
 
+  @media (max-width: 1024px) {
+    margin-top: 100px;
 
-  
+    h2 {
+      width: 100%;
+    }
+  }
+}
+
+
 .peculiaritiesContainer {
-    margin: 150px 0 150px;
-    max-width: calc(95% - 72px);
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    align-items: center;
-    text-align: center;
-    gap: 24px;
-     padding-right: 72px; 
+  margin: 150px 0;
+  max-width: calc(95% - 72px);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+  padding-right: 72px;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+    padding-right: 0;
+    margin: 50px auto;
+    width: 100%;
+
+    .peculiarity {
+      padding-left: 0;
+    }
+  }
 }
 
 .peculiarity {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding-left: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.peculiarity2,
+.peculiarity3 {
+  flex-direction: row;
+  align-items: center;
+
+  @media (max-width: 1024px) {
     flex-direction: column;
+    gap: 16px;
+  }
+
+  .imgArrowRight {
+    display: flex;
+    margin-right: 70px;
+    fill: var(--text-color);
+    color: var(--text-color);
+    width: 20px;
+    height: 12px;
     justify-content: center;
-    position: relative;
-    padding-left: 20px;
-}
 
-.peculiarity2,
-.peculiarity3 {
-    flex-direction: row;
-    align-items: center;
-    /* 
-    align-items: center;  */
-}
-
-.peculiarity2,
-.peculiarity3 {
-    .imgArrowRight {
-        display: flex;
-        margin-right: 70px;
-        fill: var(--text-color);
-        color: var(--text-color);
-        width: 20px;
-        height: 12px;
-        justify-content: center;
+    @media (max-width: 1024px) {
+      margin-right: 0;
     }
+  }
 }
+
 
 .blueCarContainer {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%; 
-  }
-  
-  .bigLogoContainer {
-    position: absolute;
-    width: 85%; 
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    justify-content: center;
-    display: flex; 
-    align-items: center;
-    
-    .bigLogo {
-      fill: var(--text-color);
-      width: 85%; 
-      height: auto;
-    }
-  }
-  
-  .blueCar {
-    position: relative;
-    z-index: 10;
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  .blueCarImage {
-    width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.bigLogoContainer {
+  position: absolute;
+  width: 85%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+
+  .bigLogo {
+    fill: var(--text-color);
+    width: 85%;
     height: auto;
-    display: block;
   }
+}
+
+.blueCar {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.blueCarImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.buttonGroup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+
+  @media (max-width: 768px) {
+    margin-top: 30px;
+    gap: 0px;
+  }
+}
+
+.btn {
+  @media (max-width: 768px) {
+    margin-bottom: 30px;
+    width: 80%;
+  }
+}
+
+.faqsContainer {
+  margin-top: 150px;
+
+  @media (max-width: 1024px) {
+    margin-top: 100px;
+  }
+}

@@ -1,79 +1,123 @@
 .aboutContainer {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .aboutMainImg {
-    width: 100%;
+  width: 100%;
 }
 
 .contentAboutBlock1,
 .contentAboutBlock2 {
-    margin: 200px 40px 0 40px;
+  margin: 200px 40px 0 40px;
+
+  @media (max-width: 1024px) {
+    margin: 100px 20px 0 20px;
+
+    h2 {
+      margin-bottom: 50px;
+    }
+
+    .contentBlock1,
+    .contentBlock2 {
+      margin: 60px 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    margin: 100px 0 0;
+  }
 }
 
 
 
 .tripImg {
-    height: 585px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    overflow: hidden;
+  height: 585px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
 }
 
 
 .companyValues {
-    padding: 60px 20px;
-  }
-  
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 40px;
-    margin: 0 auto;
-  }
-  
-  .card {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    p{
-      margin-top: 30px;
-    }
-    .title {
-      margin-top: 100px;
-      font-size: 30px;
-      font-weight: 700;
-      line-height: 30px;
-    }
-  }
-  
-  .image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+  padding: 60px 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+
+  p {
+    margin-top: 30px;
   }
 
-  .imageColumn {
-    display: flex;
-    justify-content: end;
+  .title {
+    margin-top: 100px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+        @media (max-width: 768px) {
+    margin-top: 30px;
   }
-  
-  .contentBlock1{
-    margin: 120px 0;
   }
-  .contentBlock2{
-    margin: 120px 0 300px 0;
-  }
+}
 
-  .tripBlock,
-  .tripImg,
-  .informationBlock,
-  .grid
-  {
-    margin-top: 150px;
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.imageColumn {
+  display: flex;
+  justify-content: end;
+}
+
+.contentBlock1 {
+  margin: 120px 0;
+}
+
+.contentBlock2 {
+  margin: 120px 0 300px 0;
+}
+
+.tripBlock,
+.tripImg,
+.informationBlock,
+.grid {
+  margin-top: 150px;
+    @media (max-width: 768px) {
+  margin-top: 50px;
   }
+}
+
+.buttonGroup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+
+  @media (max-width: 768px) {
+    margin-top: 30px;
+    gap: 0px;
+  }
+}
+
+.btn {
+  @media (max-width: 768px) {
+    margin-bottom: 30px;
+    width: 80%;
+  }
+}

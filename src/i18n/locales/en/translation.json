@@ -2,7 +2,7 @@
   "menu": {
     "passengers": "Passengers",
     "drivers": "Drivers",
-    "about": "About",
+    "about": "About us",
     "сlose": "Сlose"
   },
   "home": {
@@ -66,7 +66,7 @@
   "passenger": {
     "title": "Travel<br/>in comfort",
     "app": "Even more convenient<br/>in the app",
-    "download_app": "Download the app",
+    "download_app": "Download",
     "app_description": "Our goal is to make your life more convenient and enjoyable, and we achieve this by simplifying processes through our app",
     "bonus": "₴1000 bonus for all trips<br/>via our app",
     "intercity": "Trips<br/>between cities",
@@ -128,5 +128,14 @@
         "answer": "To register in the app, first download..."
       }
     ]
-  }
+  },
+  "footer": {
+  "passengers": "Passengers",
+  "drivers": "Drivers",
+  "socials": "Karma on social media:",
+  "about": "About us",
+  "privacy": "Privacy",
+  "copyright": "© 2024 Copyright",
+  "download_app": "Download"
+}
 }

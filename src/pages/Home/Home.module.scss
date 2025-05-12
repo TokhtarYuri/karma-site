@@ -35,6 +35,10 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 60px;
+
+  @media (max-width: 1024px) {
+    margin-top: 50px;
+  }
 }
 
 .item {
@@ -54,7 +58,7 @@
   margin: 70px 0;
 
   @media (max-width: 1023px) {
-    margin: 0;
+    margin: 30px 0 0;
   }
 }
 
@@ -79,27 +83,43 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
-    @media (max-width: 768px) {
+
+  @media (max-width: 768px) {
     margin-top: 30px;
+    gap: 0px;
   }
 }
 
 .btn {
   @media (max-width: 768px) {
+    margin-bottom: 30px;
     width: 80%;
   }
 }
 
 .contentDriverDataTitle {
   margin: 50px 0 90px 0;
+
+  @media (max-width: 768px) {
+    margin: 30px 0;
+  }
+
 }
 
 .contentDriverDataWrapper {
   height: 100vh;
+
+  @media (max-width: 1023px) {
+    height: auto;
+  }
 }
 
 .contentDriverDataContent {
   margin-bottom: 110px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 50px;
+  }
 }
 
 .pointContant p:first-child {
@@ -109,6 +129,11 @@
 .whatWeOffer {
   margin-top: 150px;
   padding-right: 2rem;
+
+  @media (max-width: 768px) {
+    margin-top: 100px;
+    padding-right: 0;
+  }
 }
 
 
@@ -119,13 +144,24 @@
   align-items: stretch;
   gap: 24px;
   padding-right: 72px;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+    padding-right: 0;
+    margin: 100px 0;
+    gap: 40px;
+  }
 }
 
 .peculiaritiesTitle {
   display: flex;
   justify-content: flex-start;
-  padding: 16px;
+  /*   padding: 16px; */
   width: 70%;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
 }
 
 .peculiarity {
@@ -135,18 +171,22 @@
   width: 85%;
   position: relative;
   padding-left: 20px;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
 }
 
 .peculiarity2,
 .peculiarity3 {
   flex-direction: row;
   align-items: center;
-  /* 
-  align-items: center;  */
-}
 
-.peculiarity2,
-.peculiarity3 {
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .imgArrowRight {
     display: flex;
     margin-right: 70px;
@@ -155,8 +195,14 @@
     width: 20px;
     height: 12px;
     justify-content: center;
+    transform: rotate(0deg);
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
   }
 }
+
 
 .mb {
   margin-bottom: 20px;
@@ -164,4 +210,8 @@
 
 .faqsContainer {
   margin-top: 150px;
+
+  @media (max-width: 768px) {
+  margin-top: 100px;
+  }
 }

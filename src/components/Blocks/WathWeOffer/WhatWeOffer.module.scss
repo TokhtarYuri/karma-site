@@ -25,73 +25,107 @@
   margin-bottom: 120px;
 }
 
-
 .grid {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-
-  .row1 {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 2rem;
-  }
-
-  .row2 {
-    display: grid;
-    grid-template-columns: 33% 67%;
-    gap: 2rem;
-  }
 }
 
-.card1,
-.card2,
-.card4,
-{
-.text {
+.grid .row1 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 2rem;
+}
 
+.grid .row2 {
+  display: grid;
+  grid-template-columns: 33% 67%;
+  gap: 2rem;
+}
+
+/* Индивидуальные стили карточек */
+.card1 .text,
+.card2 .text,
+.card4 .text {
   left: 85px;
   bottom: 70px;
 }
-}
 
-.card1,
-{
-.image {
+.card1 .image {
   right: 4%;
 }
-}
 
-.card2,
-{
-.image {
+.card2 .image {
   right: 10%;
 }
-}
 
-.card4,
-{
-.image {
+.card4 .image {
   right: 14%;
 }
-}
-
-
-
-
 
 .card3 {
   background-color: #1C1C1C;
   color: #ffffff;
+}
 
-  .text {
+.card3 .text {
+  left: 85px;
+  top: 70px;
+}
 
-    left: 85px;
-    top: 70px;
+.card3 .image {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Планшеты (до 1024px) */
+@media (max-width: 1024px) {
+  .wrapper h2 {
+    margin-bottom: 80px;
+  }
+  .grid .row1,
+  .grid .row2 {
+    grid-template-columns: 1fr;
   }
 
+  .text {
+    max-width: 60%;
+  }
+
+  .card1 .text,
+  .card2 .text,
+  .card4 .text,
+  .card3 .text {
+    left: 40px;
+    top: 15px;
+    bottom: auto;
+      font-size: 26px;
+  font-weight: 700;
+  line-height: 36px;
+  }
+
+
   .image {
-    left: 50%;
-    transform: translateX(-50%);
+    max-width: 100%;
+    max-height: 70%;
+    right: 0 !important;
+    left: auto !important;
+    transform: none !important;
+  }
+}
+
+/* Мобильные устройства (до 768px) */
+@media (max-width: 768px) {
+  .wrapper h2 {
+  margin-bottom: 30px;
+}
+  .text {
+    max-width: 90%;
+    left: 20px !important;
+    bottom: 15px !important;
+  }
+
+  .card3 .text {
+    top: 15px !important;
   }
 }

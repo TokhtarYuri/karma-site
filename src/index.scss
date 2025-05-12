@@ -34,7 +34,7 @@
   }
 
   @media (max-width: 1023px) {
-    --padding-horizontal: 40px;
+    --padding-horizontal: 20px;
   }
 }
 
@@ -111,8 +111,8 @@ h2 {
   }
 
   @media (max-width: 768px) {
-    font-size: 36px;
-    line-height: 44px;
+    font-size: 32px;
+    line-height: 40px;
   }
 }
 
@@ -138,6 +138,15 @@ h3 {
   font-size: 40px;
   font-weight: 500;
   line-height: 55px;
+    @media (max-width: 1024px) {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 22px;
+    line-height: 28px;
+  }
 }
 
 /* Title medium */

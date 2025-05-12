@@ -62,13 +62,15 @@ const Passengers: React.FC = () => {
     </h2>,
     content: <p className={clsx('body-md', styles.contentApp)}>{t("passenger.app_description")}</p>,
     buttons: (
-      <Button onClick={() => console.log('Clicked!')}>
-        <div className={styles.buttonContent}>
-          <p className="button-text-md">
-            {t('passenger.download_app')}
-          </p>
-        </div>
-      </Button>
+      <div className={styles.buttonGroup}>
+        <Button className={styles.btn} onClick={() => console.log('Clicked!')}>
+          <div className={styles.buttonContent}>
+            <p className="button-text-md">
+              {t('passenger.download_app')}
+            </p>
+          </div>
+        </Button>
+      </div>
     )
   };
 
@@ -98,7 +100,7 @@ const Passengers: React.FC = () => {
     </h2>,
     content: <p className={clsx('body-md', styles.contentApp)}>{t("passenger.delivery.description")}</p>,
   };
-  
+
 
   return (<>
     <div className={styles.passengers}>
@@ -124,7 +126,7 @@ const Passengers: React.FC = () => {
             i18nKey="passenger.bonus"
             components={{ br: <br /> }}
           /></p>
-          <BonusCar/>
+        <BonusCar />
       </div>
       <div className={styles.intercityBlockData}>
         <ContentBlock data={intercityBlockData} />

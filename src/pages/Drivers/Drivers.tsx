@@ -66,17 +66,19 @@ const Drivers: React.FC = () => {
       </ul>
     </>,
     buttons: (
-      <Button onClick={() => console.log('Clicked!')}>
-        <div className={styles.buttonContent}>
-          <p className="button-text-md">
-            {t('drivers.cta_button')}
-          </p>
-        </div>
-      </Button>
+      <div className={styles.buttonGroup}>
+        <Button onClick={() => console.log('Clicked!')}>
+          <div className={styles.buttonContent}>
+            <p className="button-text-md">
+              {t('drivers.cta_button')}
+            </p>
+          </div>
+        </Button>
+      </div>
     ),
-     customStyles: {
-          content: styles.contentAppBlockDataContent,
-        }
+    customStyles: {
+      content: styles.contentAppBlockDataContent,
+    }
   };
 
   return (

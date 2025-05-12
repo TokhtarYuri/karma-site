@@ -30,13 +30,15 @@ const About: React.FC = () => {
       <p className={clsx('body-md', styles.contentApp)}>{t("about.comfort_description")}</p>
     </>,
     buttons: (
-      <Button onClick={() => console.log('Clicked!')}>
-        <div className={styles.buttonContent}>
-          <p className="button-text-md">
-            {t('about.join_button')}
-          </p>
-        </div>
-      </Button>
+      <div className={styles.buttonGroup}>
+        <Button className={styles.btn} onClick={() => console.log('Clicked!')}>
+          <div className={styles.buttonContent}>
+            <p className="button-text-md">
+              {t('about.join_button')}
+            </p>
+          </div>
+        </Button>
+      </div>
     ),
     customStyles: {
       content: styles.contentBlock1,

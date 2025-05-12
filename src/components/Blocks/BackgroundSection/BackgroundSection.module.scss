@@ -1,20 +1,37 @@
 .backgroundSection {
-    width: 100%;
-    height: calc(100vh - 190px);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; 
-    position: relative;
-    overflow: hidden; 
-  }
-  
-  
-  .title {
+  width: 100%;
+  height: calc(100vh - 190px);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
 
-    position: absolute;
-    bottom: 100px;
-    left: 100px;
-    margin: 0;
-    color: white;
+.title {
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+  margin: 0;
+  color: white;
+  font-size: 70px;
+  line-height: 1.1;
+
+  @media (max-width: 1024px) {
+    bottom: 60px;
+    left: 60px;
+    font-size: 50px;
   }
-  
+
+  @media (max-width: 768px) {
+    bottom: 40px;
+    left: 30px;
+    font-size: 42px;
+  }
+
+  @media (max-width: 480px) {
+    bottom: 30px;
+    left: 20px;
+    font-size: 30px;
+  }
+}

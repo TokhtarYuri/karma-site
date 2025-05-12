@@ -9,8 +9,6 @@ import { ReactComponent as Youtube } from '../../assets/youtube.svg';
 import { Link } from 'react-router-dom';
 import clsx from 'clsx';
 import { Button } from 'components/ui/Button';
-/* import { FaInstagram, FaFacebook, FaTiktok, FaYoutube } from 'react-icons/fa';
- */
 const Footer: React.FC = () => {
   const { t } = useTranslation();
   return (
@@ -45,7 +43,7 @@ const Footer: React.FC = () => {
     </div>
   
     <div className={clsx(styles.column, styles.lastColumn)}>
-      <Button onClick={() => console.log('Clicked!')}>
+      <Button className={styles.btn} onClick={() => console.log('Clicked!')}>
         <div className={styles.buttonContent}>
           <p className="button-text-md">{t('footer.download_app')}</p>
         </div>

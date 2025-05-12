@@ -1,53 +1,45 @@
 .contentBlock {
-    display: flex;
-    align-items: stretch;
-    gap: 2rem;/* 
-    margin: 2rem 0; */
-  
-    @media (max-width: 768px) {
-      flex-direction: column;
-    }
-  }
-  
-  .imageLeft {
-    flex-direction: row;
-  }
-  
-  .imageRight {
-    flex-direction: row-reverse;
-  }
-  
-  .imageColumn {
-    display: flex;
-/*     justify-content: center; */
-    align-items: center;
-  }
-  
-  .image {
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-  }
-  
-  .contentColumn {
-    display: flex;
+  display: flex;
+  align-items: stretch;
+  gap: 2rem;
+
+  @media (max-width: 768px) {
     flex-direction: column;
-    justify-content: center;
-/*     gap: 1rem; */
   }
+}
 
-  .content  {
-/*     margin-bottom: 5rem; */
-  }
+.imageLeft {
+  flex-direction: row;
+}
 
-  .title {
-/*     margin: 5rem 0 6rem 0; */
+.imageRight {
+  flex-direction: row-reverse;
+}
+
+.imageColumn {
+  display: flex;
+  align-items: center;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.contentColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.buttons {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  @media (max-width: 768px) {
+    display: block;
   }
-  
-  .buttons {
-    margin-top: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-  
+}

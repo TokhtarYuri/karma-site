@@ -16,7 +16,7 @@ type FAQProps = {
 
 const FAQ = ({ faqs }: FAQProps) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-    const { t } = useTranslation();
+  const { t } = useTranslation();
 
   const toggle = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -29,9 +29,13 @@ const FAQ = ({ faqs }: FAQProps) => {
         {faqs.map((faq, index) => (
           <div key={index} className={styles.faqItem}>
             <button className={styles.questionRow} onClick={() => toggle(index)}>
-              <span className={clsx('title-lg',styles.question)}>{faq.question}</span>
+              <span className={clsx('title-lg', styles.question)}>{faq.question}</span>
               <span className={styles.icon}>
-                {openIndex === index ? <Minus size={50} stroke="var(--text-color)"/> : <Plus size={50} stroke="var(--text-color)"/>}
+                {openIndex === index ? (
+                  <Minus className={styles.iconSvg} stroke="var(--text-color)" />
+                ) : (
+                  <Plus className={styles.iconSvg} stroke="var(--text-color)" />
+                )}
               </span>
             </button>
             <AnimatePresence initial={false}>
@@ -43,7 +47,7 @@ const FAQ = ({ faqs }: FAQProps) => {
                   transition={{ duration: 0.3 }}
                   className={styles.answerWrapper}
                 >
-                  <div className={clsx('body-md',styles.answer)}>{faq.answer}</div>
+                  <div className={clsx('body-md', styles.answer)}>{faq.answer}</div>
                 </motion.div>
               )}
             </AnimatePresence>
