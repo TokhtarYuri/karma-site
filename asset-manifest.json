@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/karma-site/static/css/main.6bb1eee2.css",
-    "main.js": "/karma-site/static/js/main.4846e28d.js",
+    "main.css": "/karma-site/static/css/main.b82be5c3.css",
+    "main.js": "/karma-site/static/js/main.40f7c5f9.js",
     "static/media/drivers.png": "/karma-site/static/media/drivers.946abf2c6f3e64f3a5ec.png",
     "static/media/passengers-main.png": "/karma-site/static/media/passengers-main.708367bf60d787b2451b.png",
     "static/media/about.png": "/karma-site/static/media/about.e7c93af466257f834a85.png",
@@ -37,11 +37,11 @@
     "static/media/phone.svg": "/karma-site/static/media/phone.34dff2244eceacc975b18a9c5a37a7eb.svg",
     "static/media/tiktok.svg": "/karma-site/static/media/tiktok.0690e5bb59600b2a7c63dfc112beb57a.svg",
     "static/media/arrow.svg": "/karma-site/static/media/arrow.1f2c16c54a9901bda07bbb08f9a7ac9b.svg",
-    "main.6bb1eee2.css.map": "/karma-site/static/css/main.6bb1eee2.css.map",
-    "main.4846e28d.js.map": "/karma-site/static/js/main.4846e28d.js.map"
+    "main.b82be5c3.css.map": "/karma-site/static/css/main.b82be5c3.css.map",
+    "main.40f7c5f9.js.map": "/karma-site/static/js/main.40f7c5f9.js.map"
   },
   "entrypoints": [
-    "static/css/main.6bb1eee2.css",
-    "static/js/main.4846e28d.js"
+    "static/css/main.b82be5c3.css",
+    "static/js/main.40f7c5f9.js"
   ]
 }
