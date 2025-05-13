@@ -14,6 +14,22 @@ type FAQProps = {
   faqs: FAQItem[];
 };
 
+// Анимация контейнера — задает задержку между элементами
+const containerVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.35,
+    },
+  },
+};
+
+// Анимация одного элемента (тайтла и вопроса)
+const itemVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.4 } },
+};
+
 const FAQ = ({ faqs }: FAQProps) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const { t } = useTranslation();
@@ -23,11 +39,20 @@ const FAQ = ({ faqs }: FAQProps) => {
   };
 
   return (
-    <section className={styles.faqSection}>
-      <h2 className={styles.title}>{t("home.faq")}</h2>
-      <div className={styles.faqList}>
+    <motion.section
+      className={styles.faqSection}
+      variants={containerVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.4 }}
+    >
+      <motion.h2 className={styles.title} variants={itemVariants}>
+        {t("home.faq")}
+      </motion.h2>
+
+      <motion.div className={styles.faqList} variants={containerVariants}>
         {faqs.map((faq, index) => (
-          <div key={index} className={styles.faqItem}>
+          <motion.div key={index} className={styles.faqItem} variants={itemVariants}>
             <button className={styles.questionRow} onClick={() => toggle(index)}>
               <span className={clsx('title-lg', styles.question)}>{faq.question}</span>
               <span className={styles.icon}>
@@ -38,12 +63,13 @@ const FAQ = ({ faqs }: FAQProps) => {
                 )}
               </span>
             </button>
+
             <AnimatePresence initial={false}>
               {openIndex === index && (
                 <motion.div
-                  initial={{ height: 0, opacity: 0 }}
-                  animate={{ height: 'auto', opacity: 1 }}
-                  exit={{ height: 0, opacity: 0 }}
+                  initial={{ opacity: 0, y: 30, height: 0 }}
+                  animate={{ opacity: 1, y: 0, height: 'auto' }}
+                  exit={{ opacity: 0, y: 30, height: 0 }}
                   transition={{ duration: 0.3 }}
                   className={styles.answerWrapper}
                 >
@@ -51,10 +77,11 @@ const FAQ = ({ faqs }: FAQProps) => {
                 </motion.div>
               )}
             </AnimatePresence>
-          </div>
+          </motion.div>
         ))}
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
+
   );
 };
 

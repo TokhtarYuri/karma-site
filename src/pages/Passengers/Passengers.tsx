@@ -19,6 +19,7 @@ import { ReactComponent as SafetyIcon } from '../../assets/safety.svg';
 import { ReactComponent as BonusCar } from '../../assets/bonus-car.svg';
 import clsx from 'clsx';
 import FAQ from 'components/Blocks/FAQ';
+import { motion } from 'framer-motion';
 
 
 const Passengers: React.FC = () => {
@@ -120,14 +121,31 @@ const Passengers: React.FC = () => {
       <div className={styles.contentAppBlockData}>
         <ContentBlock data={contentAppBlockData} />
       </div>
+
       <div className={styles.bonusContainer}>
-        <p className='headline-bold'>
+        <motion.p
+          className="headline-bold"
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
           <Trans
             i18nKey="passenger.bonus"
             components={{ br: <br /> }}
-          /></p>
-        <BonusCar />
+          />
+        </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
+          <BonusCar />
+        </motion.div>
       </div>
+
       <div className={styles.intercityBlockData}>
         <ContentBlock data={intercityBlockData} />
       </div>

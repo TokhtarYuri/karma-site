@@ -14,6 +14,7 @@ import { ReactComponent as GooglePlayLogo } from '../../assets/logo-google-play.
 import { useTheme } from '../../context/ThemeContext';
 import { WhatWeOffer } from 'components/Blocks/WathWeOffer';
 import FAQ from 'components/Blocks/FAQ';
+import { motion } from 'framer-motion';
 
 
 const Home: React.FC = () => {
@@ -105,33 +106,61 @@ const Home: React.FC = () => {
   return (
     <>
       <div className={styles.contentBlockData}>
-        <ContentBlock data={contentBlockData} />
+        <ContentBlock data={{ ...contentBlockData, animateOnMount: true }} />
+
       </div>
       <div className={styles.whatWeOffer}>
         <WhatWeOffer />
       </div>
       <div className={styles.peculiaritiesContainer}>
-        <div className={styles.peculiaritiesTitle}>
+        <motion.div
+          className={styles.peculiaritiesTitle}
+          initial={{ opacity: 0, x: -80 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true, amount: 0.5 }}
+        >
           <h3>{t('home.why_karma')}</h3>
-        </div>
-        <div className={clsx(styles.peculiarity, styles.peculiarity1)}>
+        </motion.div>
+
+        <motion.div
+          className={clsx(styles.peculiarity, styles.peculiarity1)}
+          initial={{ opacity: 0, x: -80 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, delay: 0.2 }}
+          viewport={{ once: true, amount: 0.5 }}
+        >
           <p className={clsx('title-sm-bold', styles.mb)}>{t('home.comfort')}</p>
           <p className="body-text">{t('home.car_choice')}</p>
-        </div>
-        <div className={clsx(styles.peculiarity, styles.peculiarity2)}>
+        </motion.div>
+
+        <motion.div
+          className={clsx(styles.peculiarity, styles.peculiarity2)}
+          initial={{ opacity: 0, x: -80 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, delay: 0.4 }}
+          viewport={{ once: true, amount: 0.5 }}
+        >
           <ArrowRight className={styles.imgArrowRight} />
           <div>
             <p className={clsx('title-sm-bold', styles.mb)}>{t('home.speed')}</p>
             <p className="body-text">{t('home.fast_search')}</p>
           </div>
-        </div>
-        <div className={clsx(styles.peculiarity, styles.peculiarity3)}>
+        </motion.div>
+
+        <motion.div
+          className={clsx(styles.peculiarity, styles.peculiarity3)}
+          initial={{ opacity: 0, x: -80 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, delay: 0.6 }}
+          viewport={{ once: true, amount: 0.5 }}
+        >
           <ArrowRight className={styles.imgArrowRight} />
           <div>
             <p className={clsx('title-sm-bold', styles.mb)}>{t('home.economy')}</p>
             <p className="body-text">{t('home.price_control')}</p>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className={styles.contentDriverData}>
         <ContentBlock data={contentDriverData} />
